@@ -4,7 +4,7 @@ import Icone from '../assets/img/programacaoWebInvert.png'
 
 const PtHero = () => {
   return (
-    <div>
+    <div id="home">
         <div className="bg-black w-full h-full py-16 px-2 md:p-18 font-BebasNeue tracking-widest">
             <div className="p-4 justify-center mb-2 md:mb-0">
                 <h2 className="text-white text-3xl md:text-5xl text-center">Full-Stack Web Developer</h2>
@@ -17,7 +17,7 @@ const PtHero = () => {
                     <a href="#about" className="bg-green-500 text-white text-3xl px-8 py-4 rounded-full hover:bg-white hover:text-green-500 duration-700 hover:px-14">Comece Por aqui</a>
                 </div>
             </div>
-      </div>  
+          </div>  
     </div>
   )
 }

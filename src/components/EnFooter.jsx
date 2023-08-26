@@ -1,6 +1,6 @@
 import React from 'react'
 
-const PtFooter = () => {
+const EnFooter = () => {
   return (
     <div>
         <div className="bg-white h-16 py-4 md:py-16"></div>
@@ -23,7 +23,7 @@ const PtFooter = () => {
                   <span className="border-r border-white"></span>
                 </li>
                 <li className="px-2">
-                  <a className="text-sm md:text-xl hover:underline duration-700" href="/pt/#contact">Fale comigo</a>
+                  <a className="text-sm md:text-xl hover:underline duration-700" href="/en/#contact">Contact</a>
                 </li>
               </ul>
             </div>
@@ -32,4 +32,4 @@ const PtFooter = () => {
   )
 }
 
-export default PtFooter
+export default EnFooter
