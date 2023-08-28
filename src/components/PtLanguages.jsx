@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 import JsIcon from '../assets/img/icons/js.png'
 import HtmlIcon from '../assets/img/icons/html-5.png'
 import CssIcon from '../assets/img/icons/css-3.png'
@@ -21,102 +23,102 @@ const PtLanguages = () => {
                     {/* Desktop Items */}
                     <ul className="hidden md:flex flex-1 px-0 pt-8 pb-6 justify-center">
                       <li className="px-4 py-2 md:py-0">
-                        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"  target="_blank" rel="noopener noreferrer">
+                        <Link to="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"  target="_blank" rel="noopener noreferrer">
                           <img className="w-16 md:w-28" src={JsIcon} alt="" />
-                        </a>
+                        </Link>
                       </li>
                       <li className="px-4 py-2 md:py-0">
-                        <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" rel="noopener noreferrer">
+                        <Link to="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" rel="noopener noreferrer">
                           <img className="w-16 md:w-28"  src={HtmlIcon} alt="" />
-                        </a>
+                        </Link>
                       </li>
                       <li className="px-4 py-2 md:py-0">
-                        <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank" rel="noopener noreferrer">
+                        <Link to="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank" rel="noopener noreferrer">
                           <img className="w-16 md:w-28"  src={CssIcon} alt="" />
-                        </a>
+                        </Link>
                       </li>
                       <li className="px-4 py-2 md:py-0">
-                        <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">
+                        <Link to="https://react.dev/" target="_blank" rel="noopener noreferrer">
                           <img className="w-16 md:w-28" src={ReactIcon} alt="" />
 
-                        </a>
+                        </Link>
                       </li>
                       <li className="px-4 py-2 md:py-0">
-                        <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">
+                        <Link to="https://nodejs.org/" target="_blank" rel="noopener noreferrer">
                           <img className="w-16 md:w-28" src={NodeIcon} alt="" />
-                        </a>
+                        </Link>
                       </li>
                     </ul>
 
                     <ul className="hidden md:flex flex-1 px-0 pt-8 pb-6 justify-center">
                       <li className="px-4 py-2 md:py-0">
-                        <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">
+                        <Link to="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">
                           <img className="w-16 md:w-28" src={TailwindIcon} alt="" />
-                        </a>
+                        </Link>
                       </li>
                       <li className="px-4 py-2 md:py-0">
-                        <a href="https://www.mysql.com/" target="_blank" rel="noopener noreferrer">
+                        <Link to="https://www.mysql.com/" target="_blank" rel="noopener noreferrer">
                           <img className="w-16 md:w-28"  src={MySqlIcon} alt="" />
-                        </a>
+                        </Link>
                       </li>
                       <li className="px-4 py-2 md:py-0">
-                        <a href="https://www.postgresql.org/" target="_blank" rel="noopener noreferrer">
+                        <Link to="https://www.postgresql.org/" target="_blank" rel="noopener noreferrer">
                           <img className="w-16 md:w-28"  src={PostgreIcon} alt="" />
-                        </a>
+                        </Link>
                       </li>
                       <li className="px-4 py-2 md:py-0">
-                        <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">
+                        <Link to="https://git-scm.com/" target="_blank" rel="noopener noreferrer">
                           <img className="w-16 md:w-28" src={GitIcon} alt="" />
-                        </a>
+                        </Link>
                       </li>
 
                     </ul>
                     {/* Mobile Items */}
                     <ul className="grid grid-cols-2 py-8 items-center place-items-center md:hidden">
                       <li className="px-4 py-2 md:py-0">
-                          <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">
+                          <Link to="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">
                             <img className="w-16 md:w-28" src={JsIcon} alt="" />
-                          </a>
+                          </Link>
                         </li>
                         <li className="px-4 py-2 md:py-0">
-                          <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">
+                          <Link to="https://developer.mozilla.org/pt-BR/docs/Web/HTML">
                             <img className="w-16 md:w-28"  src={HtmlIcon} alt="" />
-                          </a>
+                          </Link>
                         </li>
                         <li className="px-4 py-2 md:py-0">
-                          <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">
+                          <Link to="https://developer.mozilla.org/pt-BR/docs/Web/CSS">
                             <img className="w-16 md:w-28"  src={CssIcon} alt="" />
-                          </a>
+                          </Link>
                         </li>
                         <li className="px-4 py-2 md:py-0">
-                          <a href="https://react.dev/">
+                          <Link to="https://react.dev/">
                             <img className="w-16 md:w-28" src={ReactIcon} alt="" />
-                          </a>
+                          </Link>
                         </li>
                         <li className="px-4 py-2 md:py-0">
-                          <a href="https://nodejs.org/" >
+                          <Link to="https://nodejs.org/" >
                             <img className="w-16 md:w-28" src={NodeIcon} alt="" />
-                          </a>
+                          </Link>
                         </li>
                         <li className="px-4 py-2 md:py-0">
-                          <a href="https://tailwindcss.com/">
+                          <Link to="https://tailwindcss.com/">
                             <img className="w-16 md:w-28" src={TailwindIcon} alt="" />
-                          </a>
+                          </Link>
                         </li>
                         <li className="px-4 py-2 md:py-0">
-                          <a href="https://www.mysql.com/">
+                          <Link to="https://www.mysql.com/">
                             <img className="w-16 md:w-28"  src={MySqlIcon} alt="" />
-                          </a>
+                          </Link>
                         </li>
                         <li className="px-4 py-2 md:py-0">
-                          <a href="https://www.postgresql.org/">
+                          <Link to="https://www.postgresql.org/">
                             <img className="w-16 md:w-28"  src={PostgreIcon} alt="" />
-                          </a>
+                          </Link>
                         </li>
                         <li className="px-4 py-2 md:py-0">
-                          <a href="https://git-scm.com/">
+                          <Link to="https://git-scm.com/">
                             <img className="w-16 md:w-28" src={GitIcon} alt="" />
-                          </a>
+                          </Link>
                         </li>
                     </ul>
 

@@ -1,4 +1,5 @@
 import { React, useState } from 'react'
+import { Link } from 'react-router-dom'
 import Icone from '../assets/img/programacaoWebInvert.png'
 
 
@@ -21,46 +22,46 @@ const EnNavbar = () => {
             <div className="flex fixed bg-black w-full px-3 md:px-20 py-3 font-BebasNeue tracking-widest">
                 <div className="container flex items-center mx-auto">
                     <div>
-                        <a href="#">
+                        <Link to="#">
                            {/* <img className="w-20 md:w-125px" src="" alt="Spoitify" /> */}
-                        </a>
+                        </Link>
                     </div>
 
                     <div className="flex px-4 py-4 md:flex flex-1 -m-5">
                         <img className="h-8 md:h-12 md:w-12 md:-mx-14 md:-mt-0" src={Icone} alt="" />
-                        <a href="/pt/">
+                        <Link to="/pt/">
                             <h1 className="text-white text-3xl font-extrabold md:ml-16 md:py-2 px-1">Marcelo Zuza</h1>
-                        </a>
+                        </Link>
                         <div className="flex justify-end flex-1 md:hidden text-white text-3xl">
                             <button onClick={openMenu}><i className="fas fa-bars"></i></button>
                             {isOpen && 
                                 <ul className="text-xl px-4">
                                 <li className="px-1">
-                                    <a className="text-sm" href="/pt/#home">home</a>
+                                    <Link className="text-sm" to="/pt/#home">home</Link>
                                 </li>
                                 <li className="px-2">
-                                    <a onClick={openMenu} className="text-sm" href="/en/#about">About</a>
+                                    <Link onClick={openMenu} className="text-sm" to="/en#about">About</Link>
                                 </li>
                                 <li className="px-2">
-                                    <a onClick={openMenu} className="text-sm" href="/en/#languages">Languages</a>
+                                    <Link onClick={openMenu} className="text-sm" to="/en#languages">Languages</Link>
                                 </li>
                                 <li className="px-2">
-                                    <a onClick={openMenu} className="text-sm" href="/en/#projects">Projects</a>
+                                    <Link onClick={openMenu} className="text-sm" to="/en#projects">Projects</Link>
                                 </li>
                                 <li className="px-2">
-                                    <a onClick={openMenu} className="text-sm" href="/en/#contact">Contact</a>
+                                    <Link onClick={openMenu} className="text-sm" to="/en#contact">Contact</Link>
                                 </li>
    
                                 <li className="px-1">
-                                    <a onClick={openMenu} className="text-sm" href="https://www.linkedin.com/in/marcelo-zuza/">Linkedin</a>
+                                    <Link onClick={openMenu} className="text-sm" to="https://www.linkedin.com/in/marcelo-zuza/">Linkedin</Link>
                                 </li>
 
                                 <li className="px-1">
-                                    <a onClick={openMenu} className="text-sm" href="https://github.com/marcelo-zuza">GitHub</a>
+                                    <Link onClick={openMenu} className="text-sm" to="https://github.com/marcelo-zuza">GitHub</Link>
                                 </li>
 
                                 <li className="px-1">
-                                    <a onClick={openMenu} className="text-sm" href="/pt/">Portuguese</a>
+                                    <Link onClick={openMenu} className="text-sm" to="/pt">Portuguese</Link>
                                 </li>
 
                                 </ul>
@@ -72,37 +73,37 @@ const EnNavbar = () => {
                         <nav className="flex-1">
                             <ul className="flex justify-end flex-1 md:-mr-10">
                                 <li className="px-2">
-                                    <a className="text-sm md:text-xl hover:text-green-500 duration-700" href="/en/#home">home</a>
+                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/en#home">home</Link>
                                 </li>
                                 <li className="px-2">
-                                    <a className="text-sm md:text-xl hover:text-green-500 duration-700" href="/en/#about">About</a>
+                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/en#about">About</Link>
                                 </li>
                                 <li className="px-2">
-                                    <a className="text-sm md:text-xl hover:text-green-500 duration-700" href="/en/#languages">Languages</a>
+                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/en#languages">Languages</Link>
                                 </li>
                                 <li className="px-2">
-                                    <a className="text-sm md:text-xl hover:text-green-500 duration-700" href="/en/#projects">Projects</a>
+                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/en#projects">Projects</Link>
                                 </li>
                                 <li className="px-2">
-                                    <a className="text-sm md:text-xl hover:text-green-500 duration-700" href="/en/#contact">Contact</a>
+                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/en#contact">Contact</Link>
                                 </li>
                                 <li className="px-1">
                                     <span className="border-r border-white"></span>
                                 </li>
                                 <li className="px-1">
-                                    <a className="text-sm md:text-xl hover:text-green-500 duration-700" href="https://www.linkedin.com/in/marcelo-zuza/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="https://www.linkedin.com/in/marcelo-zuza/" target="_blank" rel="noopener noreferrer">Linkedin</Link>
                                 </li>
                                 <li className="px-1">
                                     <span className="border-r border-white"></span>
                                 </li>
                                 <li className="px-1">
-                                    <a className="text-sm md:text-xl hover:text-green-500 duration-700" href="https://github.com/marcelo-zuza" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="https://github.com/marcelo-zuza" target="_blank" rel="noopener noreferrer">GitHub</Link>
                                 </li>
                                 <li className="pl-1">
                                     <span className="border-r border-white"></span>
                                 </li>
                                 <li className="px-1">
-                                    <a className="text-sm md:text-xl hover:text-green-500 duration-700" href="/pt/">PORTUGUESE</a>
+                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/pt">PORTUGUESE</Link>
                                 </li>
                                 <li className="pl-1">
                                     <span className="border-r border-white"></span>

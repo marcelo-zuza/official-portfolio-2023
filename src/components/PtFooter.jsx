@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const PtFooter = () => {
   return (
@@ -11,19 +12,19 @@ const PtFooter = () => {
             <div>
               <ul className="flex justify-center flex-1">
                 <li className="px-2">
-                  <a className="text-sm md:text-xl hover:underline duration-700" href="https://www.linkedin.com/in/marcelo-zuza/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+                  <Link className="text-sm md:text-xl hover:underline duration-700" to="https://www.linkedin.com/in/marcelo-zuza/" target="_blank" rel="noopener noreferrer">Linkedin</Link>
                 </li>
                 <li className="px-1">
                   <span className="border-r border-white"></span>
                 </li>
                 <li className="px-2">
-                  <a className="text-sm md:text-xl hover:underline duration-700" href="https://github.com/marcelo-zuza" target="_blank" rel="noopener noreferrer">Git Hub</a>
+                  <Link className="text-sm md:text-xl hover:underline duration-700" to="https://github.com/marcelo-zuza" target="_blank" rel="noopener noreferrer">Git Hub</Link>
                 </li>
                 <li className="px-1">
                   <span className="border-r border-white"></span>
                 </li>
                 <li className="px-2">
-                  <a className="text-sm md:text-xl hover:underline duration-700" href="/pt/#contact">Fale comigo</a>
+                  <Link className="text-sm md:text-xl hover:underline duration-700" to="/pt/#contact">Fale comigo</Link>
                 </li>
               </ul>
             </div>

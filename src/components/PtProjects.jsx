@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const PtProjects = () => {
   return (
@@ -10,7 +11,7 @@ const PtProjects = () => {
                 </div>
                 <p className="px-6 md:px-8 text-xl">Conheça projetos, aplicações e layouts deesenvolvidos por mim:</p>
                 <div className="flex justify-center pt-10 pb-6 md:pb-0">
-                    <a href="/pt/projects" className="bg-green-500 text-white text-2xl px-8 py-4 rounded-full hover:bg-white hover:text-green-500 duration-700 hover:px-14">Projetos</a>
+                    <Link to="/pt/projects" className="bg-green-500 text-white text-2xl px-8 py-4 rounded-full hover:bg-white hover:text-green-500 duration-700 hover:px-14">Projetos</Link>
                 </div>
             </div>            
         </div>
