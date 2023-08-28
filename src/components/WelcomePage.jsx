@@ -24,7 +24,7 @@ const WelcomePage = () => {
                 <div className="col-span-1 my-5 md:py-0 md:m-0 md: border-white rounded-full">
                     <p className="text-white text-center text-5xl md:text-6xl mb-5 font-extrabold">BEM-VINDO!</p>
                     <div className="flex justify-center -m-2">
-                    <Link to="/official-portfolio-2023/pt" className="bg-green-500 text-white text-2xl px-6 py-4 md:px-10 rounded-full hover:bg-white hover:text-green-500 duration-700 hover:px-14">PORTUGUÊS</Link>
+                    <Link to="/pt" className="bg-green-500 text-white text-2xl px-6 py-4 md:px-10 rounded-full hover:bg-white hover:text-green-500 duration-700 hover:px-14">PORTUGUÊS</Link>
                     </div>
                 </div>
             </div>
