@@ -9,7 +9,7 @@ const PtAbout = () => {
                 <div className="flex text-4xl">
                     <h1 className="py-4">QUEM SOU</h1>
                 </div>
-                <p className="px-6 md:px-8 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit velit quam pariatur accusamus voluptates nisi deleniti alias iusto maiores. Tenetur, aperiam ullam incidunt cumque molestias error odit pariatur possimus ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias impedit alias facilis, similique dolor est pariatur iusto quas odit sequi unde. Ducimus alias ipsa ea ipsam tempora id assumenda culpa.</p>
+                <p className="px-6 md:px-8 text-xl">Sou um Desenvolvedor Web e meu trabalho é criar e manter sites e aplicativos para a internet.  Minhas principais responsabilidades incluem escrever código limpo e eficiente em linguagens de programação como Javascript, HTML e CSS; e usar frameworks e bibliotecas populares como Node.JS e React.JS. Eu também trabalho com bancos de dados relacionais, como MySQL e PostgreSQL, para armazenar informações e garantir que os sites e aplicativos funcionem corretamente.</p>
             </div>
             <div className="px-6 md:grid grid-cols-2 ">
 
