@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Icone from '../assets/img/programacaoWebInvert.png'
-
+import HandleClick from '../services/HandleClick'
 
 const PtHero = () => {
+
+
   return (
     <div id="home">
         <div className="bg-black w-full h-full pt-7 pb-28 px-2 md:p-18 md:py-16 font-BebasNeue tracking-widest">
@@ -15,7 +17,8 @@ const PtHero = () => {
                         <img src={Icone} alt="icone" className="h-60 md:h-60 pl-6" />
                 </div>
                 <div className="flex justify-center py-2 pb-20">
-                    <Link to="#about" className="bg-green-500 text-white text-3xl px-8 py-4 rounded-full hover:bg-white hover:text-green-500 duration-700 hover:px-14">Comece Por aqui</Link>
+                    <Link to="#about" onClick={HandleClick} className="bg-green-500 text-white text-3xl px-8 py-4 rounded-full hover:bg-white hover:text-green-500 duration-700 hover:px-14">Comece Por aqui</Link>
+                    <Link to="#about" onClick={HandleClick} className="bg-green-500 text-white text-3xl px-8 py-4 rounded-full hover:bg-white hover:text-green-500 duration-700 hover:px-14">Teste</Link>
                 </div>
             </div>
           </div>  

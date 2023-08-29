@@ -1,5 +1,6 @@
 import Icone from '../assets/img/programacaoWebInvert.png'
 import { React, useState } from 'react';
+import HandleClick from '../services/HandleClick';
 import { Link } from 'react-router-dom';
 
 
@@ -75,19 +76,19 @@ const PtNavbar = () => {
                         <nav className="flex-1">
                             <ul className="flex justify-end flex-1 md:-mr-10">
                                 <li className="px-2">
-                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/pt/#home">home</Link>
+                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/pt/#home" onClick={HandleClick}>home</Link>
                                 </li>
                                 <li className="px-2">
-                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/pt/#about">sobre</Link>
+                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/pt/#about" onClick={HandleClick}>sobre</Link>
                                 </li>
                                 <li className="px-2">
-                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/pt/#languages">linguagens</Link>
+                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/pt/#languages" onClick={HandleClick}>linguagens</Link>
                                 </li>
                                 <li className="px-2">
-                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/pt/#projects">projetos</Link>
+                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/pt/#projects" onClick={HandleClick}>projetos</Link>
                                 </li>
                                 <li className="px-2">
-                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/pt/#contact">contato</Link>
+                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/pt/#contact" onClick={HandleClick}>contato</Link>
                                 </li>
                                 <li className="px-1">
                                     <span className="border-r border-white"></span>
