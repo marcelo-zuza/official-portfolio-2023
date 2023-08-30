@@ -32,7 +32,7 @@ const EnHomeNavBar = () => {
 
                     <div className="flex px-4 py-4 md:flex flex-1 -m-5">
                         <img className="h-8 md:h-12 md:w-12 md:-mx-14 md:-mt-0" src={Icone} alt="" />
-                        <Link to="/en">
+                        <Link to="/en/">
                             <h1 className="text-white text-3xl font-extrabold md:ml-16 md:py-2 px-1">Marcelo Zuza</h1>
                         </Link>
                         <div className="flex justify-end flex-1 md:hidden text-white text-3xl">
@@ -64,7 +64,7 @@ const EnHomeNavBar = () => {
                                 </li>
 
                                 <li className="px-1">
-                                    <Link onClick={openMenu} className="text-sm md:text-xl" to="/pt">Português</Link>
+                                    <Link onClick={openMenu} className="text-sm md:text-xl" to="/pt/">Português</Link>
                                 </li>
 
                                 </ul>
@@ -106,7 +106,7 @@ const EnHomeNavBar = () => {
                                     <span className="border-r border-white"></span>
                                 </li>
                                 <li className="px-1">
-                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/pt">Português</Link>
+                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/pt/">Português</Link>
                                 </li>
                                 <li className="pl-1">
                                     <span className="border-r border-white"></span>

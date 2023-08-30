@@ -64,7 +64,7 @@ const PtHomeNavBar = () => {
                                 </li>
 
                                 <li className="px-1">
-                                    <Link onClick={openMenu} className="text-sm md:text-xl" to="/en">ENGLISH</Link>
+                                    <Link onClick={openMenu} className="text-sm md:text-xl" to="/en/">ENGLISH</Link>
                                 </li>
 
                                 </ul>

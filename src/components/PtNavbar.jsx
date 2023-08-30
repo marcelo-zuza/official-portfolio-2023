@@ -58,7 +58,7 @@ const PtNavbar = () => {
                                 </li>
 
                                 <li className="px-1">
-                                    <Link onClick={openMenu} className="text-sm md:text-xl" to="/en">ENGLISH</Link>
+                                    <Link onClick={openMenu} className="text-sm md:text-xl" to="/en/">ENGLISH</Link>
                                 </li>
 
                                 </ul>
@@ -95,7 +95,7 @@ const PtNavbar = () => {
                                     <span className="border-r border-white"></span>
                                 </li>
                                 <li className="px-1">
-                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/en">ENGLISH</Link>
+                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/en/">ENGLISH</Link>
                                 </li>
                                 <li className="pl-1">
                                     <span className="border-r border-white"></span>

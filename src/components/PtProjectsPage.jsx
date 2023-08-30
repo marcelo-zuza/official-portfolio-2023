@@ -21,7 +21,7 @@ const PtProjectsPage = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3">
 
                   {/* CARD MODEL */}
-                  <div className="py-6 col-span-1  bg-white my-4 px-2 mx-8 content-center border border-black rounded-xl hover:shadow-2xl duration-500">
+  {/*             <div className="py-6 col-span-1  bg-white my-4 px-2 mx-8 content-center border border-black rounded-xl hover:shadow-2xl duration-500">
                     <img className="h-40" src={Example} alt="example" />
                     <p className="text-sm py-2">Lorem ipsum dolor sit amet consectetur</p>
                     <div className="flex content-center justify-center py-2">
@@ -29,6 +29,7 @@ const PtProjectsPage = () => {
                       <a href="#" className="bg-black text-white mx-2 px-3 md:py-2 md:px-4 hover:bg-white hover:text-black duration-700 border  hover:border-black rounded-xl">Git Hub</a>
                     </div>
                   </div>
+  */}
                   {/* CARD MODEL */}
 
                   <div className="py-6 col-span-1  bg-white my-4 px-2 mx-8 content-center border border-black rounded-xl hover:shadow-2xl duration-500">
