@@ -35,18 +35,21 @@ const PtNavbar = () => {
                         <Link to="/pt/">
                             <h1 className="text-white text-3xl font-extrabold md:ml-16 md:py-2 px-1">Marcelo Zuza</h1>
                         </Link>
+
+                        {/* MOBILE NAVBAR */}
+
                         <div className="flex justify-end flex-1 md:hidden text-white text-3xl">
                             <button onClick={openMenu}><i className="fas fa-bars"></i></button>
                             {isOpen && 
                                 <ul className="text-xl px-4">
                                 <li className="px-1">
-                                    <Link onClick={openMenu} className="text-sm md:text-xl" to="/pt">home</Link>
+                                    <Link onClick={openMenu} className="text-sm md:text-xl" to="/pt/">home</Link>
                                 </li>
                                 <li className="px-2">
-                                    <Link onClick={openMenu} className="text-sm md:text-xl" to="/pt/#projects">projetos</Link>
+                                    <Link onClick={openMenu} className="text-sm md:text-xl" to="/pt/projects">projetos</Link>
                                 </li>
                                 <li className="px-2">
-                                    <Link onClick={openMenu} className="text-sm md:text-xl" to="/pt/#contact">contato</Link>
+                                    <Link onClick={openMenu} className="text-sm md:text-xl" to="/pt/contact">contato</Link>
                                 </li>
    
                                 <li className="px-1">
@@ -65,12 +68,13 @@ const PtNavbar = () => {
                             }
                         </div>
                     </div>
-
+                    
+                        {/* FULL NAVBAR */}
                     <div className="items-end flex-1 text-white font-bold hidden md:flex">
                         <nav className="flex-1">
                             <ul className="flex justify-end flex-1 md:-mr-10">
                                 <li className="px-2">
-                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/pt" onClick={HandleClick}>home</Link>
+                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/pt/" onClick={HandleClick}>home</Link>
                                 </li>
 
                                 <li className="px-2">
