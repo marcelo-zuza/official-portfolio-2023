@@ -46,7 +46,7 @@ const PtHomeNavBar = () => {
                                     <Link onClick={() => {openMenu(), HandleClick()}} className="text-sm md:text-xl" to="#about">sobre</Link>
                                 </li>
                                 <li className="px-2">
-                                    <Link oonClick={() => {openMenu(), HandleClick()}} className="text-sm md:text-xl" to="#languages">linguagens</Link>
+                                    <Link onClick={() => {openMenu(), HandleClick()}} className="text-sm md:text-xl" to="#languages">linguagens</Link>
                                 </li>
                                 <li className="px-2">
                                     <Link onClick={() => {openMenu(), HandleClick()}} className="text-sm md:text-xl" to="#projects">projetos</Link>
