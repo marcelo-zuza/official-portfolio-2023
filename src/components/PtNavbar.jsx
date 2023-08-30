@@ -40,13 +40,7 @@ const PtNavbar = () => {
                             {isOpen && 
                                 <ul className="text-xl px-4">
                                 <li className="px-1">
-                                    <Link className="text-sm md:text-xl" to="/pt/#home">home</Link>
-                                </li>
-                                <li className="px-2">
-                                    <Link onClick={openMenu} className="text-sm md:text-xl" to="/pt/#about">sobre</Link>
-                                </li>
-                                <li className="px-2">
-                                    <Link onClick={openMenu} className="text-sm md:text-xl" to="/pt/#languages">linguagens</Link>
+                                    <Link onClick={openMenu} className="text-sm md:text-xl" to="/pt">home</Link>
                                 </li>
                                 <li className="px-2">
                                     <Link onClick={openMenu} className="text-sm md:text-xl" to="/pt/#projects">projetos</Link>
@@ -76,19 +70,14 @@ const PtNavbar = () => {
                         <nav className="flex-1">
                             <ul className="flex justify-end flex-1 md:-mr-10">
                                 <li className="px-2">
-                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/pt/#home" onClick={HandleClick}>home</Link>
+                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/pt" onClick={HandleClick}>home</Link>
+                                </li>
+
+                                <li className="px-2">
+                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/pt/projects" onClick={HandleClick}>projetos</Link>
                                 </li>
                                 <li className="px-2">
-                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/pt/#about" onClick={HandleClick}>sobre</Link>
-                                </li>
-                                <li className="px-2">
-                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/pt/#languages" onClick={HandleClick}>linguagens</Link>
-                                </li>
-                                <li className="px-2">
-                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/pt/#projects" onClick={HandleClick}>projetos</Link>
-                                </li>
-                                <li className="px-2">
-                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/pt/#contact" onClick={HandleClick}>contato</Link>
+                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/pt/contact" onClick={HandleClick}>contato</Link>
                                 </li>
                                 <li className="px-1">
                                     <span className="border-r border-white"></span>
@@ -106,7 +95,7 @@ const PtNavbar = () => {
                                     <span className="border-r border-white"></span>
                                 </li>
                                 <li className="px-1">
-                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/en/">ENGLISH</Link>
+                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/en">ENGLISH</Link>
                                 </li>
                                 <li className="pl-1">
                                     <span className="border-r border-white"></span>

@@ -24,7 +24,7 @@ const PtFooter = () => {
                   <span className="border-r border-white"></span>
                 </li>
                 <li className="px-2">
-                  <Link className="text-sm md:text-xl hover:underline duration-700" to="/pt/#contact">Fale comigo</Link>
+                  <Link className="text-sm md:text-xl hover:underline duration-700" to="/pt/contact">Fale comigo</Link>
                 </li>
               </ul>
             </div>

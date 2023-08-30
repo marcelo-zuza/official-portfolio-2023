@@ -24,7 +24,7 @@ const EnFooter = () => {
                   <span className="border-r border-white"></span>
                 </li>
                 <li className="px-2">
-                  <Link className="text-sm md:text-xl hover:underline duration-700" to="/en/#contact">Contact</Link>
+                  <Link className="text-sm md:text-xl hover:underline duration-700" to="/en/contact">Contact</Link>
                 </li>
               </ul>
             </div>

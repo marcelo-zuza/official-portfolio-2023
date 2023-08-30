@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom'
 
 const EnHero = () => {
   return (
-    <div>
-        <div className="bg-black w-full h-full pt-7 pb-28 px-2 md:p-18 md:py-16 font-BebasNeue tracking-widest">
+    <div id="home">
+        <div className="bg-black w-full h-full pt-10 pb-28 px-2 md:p-18 md:py-16 font-BebasNeue tracking-widest">
             <div className="p-4 justify-center mb-2 md:mb-0">
                 <h2 className="text-white text-3xl md:text-5xl text-center">Full-Stack Web Developer</h2>
                 <h1 className="text-white text-6xl md:text-9xl -mb-1 md:-mb-4 text-center font-extrabold">MARCELO ZUZA's</h1>

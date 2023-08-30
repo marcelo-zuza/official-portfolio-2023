@@ -1,9 +1,10 @@
-import { React, useState } from 'react'
-import { Link } from 'react-router-dom'
 import Icone from '../assets/img/programacaoWebInvert.png'
+import { React, useState } from 'react';
+import HandleClick from '../services/HandleClick';
+import { Link } from 'react-router-dom';
 
 
-const EnNavbar = () => {
+const EnHomeNavBar = () => {
 
     const [isOpen, setIsOpen] = useState(false)
 
@@ -15,6 +16,8 @@ const EnNavbar = () => {
         }
         
       };
+
+
 
   return (
     <div>
@@ -37,25 +40,31 @@ const EnNavbar = () => {
                             {isOpen && 
                                 <ul className="text-xl px-4">
                                 <li className="px-1">
-                                    <Link className="text-sm" to="/en">Home</Link>
+                                    <Link onClick={() => {openMenu(), HandleClick()}} className="text-sm md:text-xl" to="#home">home</Link>
                                 </li>
                                 <li className="px-2">
-                                    <Link onClick={openMenu} className="text-sm" to="/en/projects">Projects</Link>
+                                    <Link onClick={() => {openMenu(), HandleClick()}} className="text-sm md:text-xl" to="#about">About</Link>
                                 </li>
                                 <li className="px-2">
-                                    <Link onClick={openMenu} className="text-sm" to="/en/contact">Contact</Link>
+                                    <Link onClick={() => {openMenu(), HandleClick()}} className="text-sm md:text-xl" to="#languages">Languages</Link>
+                                </li>
+                                <li className="px-2">
+                                    <Link onClick={() => {openMenu(), HandleClick()}} className="text-sm md:text-xl" to="#projects">Projects</Link>
+                                </li>
+                                <li className="px-2">
+                                    <Link onClick={() => {openMenu(), HandleClick()}} className="text-sm md:text-xl" to="#contact">Contact</Link>
                                 </li>
    
                                 <li className="px-1">
-                                    <Link onClick={openMenu} className="text-sm" to="https://www.linkedin.com/in/marcelo-zuza/">Linkedin</Link>
+                                    <Link onClick={openMenu} className="text-sm md:text-xl" to="https://www.linkedin.com/in/marcelo-zuza/">Linkedin</Link>
                                 </li>
 
                                 <li className="px-1">
-                                    <Link onClick={openMenu} className="text-sm" to="https://github.com/marcelo-zuza">GitHub</Link>
+                                    <Link onClick={openMenu} className="text-sm md:text-xl" to="https://github.com/marcelo-zuza">GitHub</Link>
                                 </li>
 
                                 <li className="px-1">
-                                    <Link onClick={openMenu} className="text-sm" to="/pt">Portuguese</Link>
+                                    <Link onClick={openMenu} className="text-sm md:text-xl" to="/pt">Português</Link>
                                 </li>
 
                                 </ul>
@@ -67,13 +76,19 @@ const EnNavbar = () => {
                         <nav className="flex-1">
                             <ul className="flex justify-end flex-1 md:-mr-10">
                                 <li className="px-2">
-                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/en">home</Link>
+                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/en/#home" onClick={HandleClick}>home</Link>
                                 </li>
                                 <li className="px-2">
-                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/en/projects">Projects</Link>
+                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/en/#about" onClick={HandleClick}>About</Link>
                                 </li>
                                 <li className="px-2">
-                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/en/contact">Contact</Link>
+                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/en/#languages" onClick={HandleClick}>Languages</Link>
+                                </li>
+                                <li className="px-2">
+                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/en/#projects" onClick={HandleClick}>Projects</Link>
+                                </li>
+                                <li className="px-2">
+                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/en/#contact" onClick={HandleClick}>Contact</Link>
                                 </li>
                                 <li className="px-1">
                                     <span className="border-r border-white"></span>
@@ -106,4 +121,4 @@ const EnNavbar = () => {
   )
 }
 
-export default EnNavbar
+export default EnHomeNavBar

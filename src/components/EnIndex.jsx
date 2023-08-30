@@ -1,6 +1,6 @@
 import React from 'react'
 import EnHero from './EnHero'
-import EnNavbar from './EnNavbar'
+import EnHomeNavBar from './EnHomeNavBar'
 import EnAbout from './EnAbout'
 import EnLanguages from './EnLanguages'
 import EnProjects from './EnProjects'
@@ -11,7 +11,7 @@ import EnFooter from './EnFooter'
 const EnIndex = () => {
   return (
     <div>
-      <EnNavbar />
+      <EnHomeNavBar />
       <EnHero />
       <EnAbout />
       <EnLanguages />

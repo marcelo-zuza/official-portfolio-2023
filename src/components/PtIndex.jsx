@@ -1,5 +1,5 @@
 import React from 'react'
-import PtNavbar from './PtNavbar'
+import PtHomeNavBar from './PtHomeNavBar'
 import PtHero from './PtHero'
 import PtAbout from './PtAbout'
 import PtLanguages from './PtLanguages'
@@ -11,7 +11,7 @@ import PtFooter from './PtFooter'
 const PtIndex = () => {
   return (
     <div>
-      <PtNavbar />
+      <PtHomeNavBar />
       <PtHero />
       <PtAbout />
       <PtLanguages />
