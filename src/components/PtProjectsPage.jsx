@@ -15,7 +15,7 @@ const PtProjectsPage = () => {
                 <div className="flex justify-center text-6xl">
                     <h1 className="py-4 underline">Projetos</h1>
                 </div>
-                <p className="flex justify-center px-6 md:px-8 text-2xl">Meu projetos</p>
+                <p className="flex justify-center px-6 md:px-8 text-2xl">Meus projetos</p>
 
       
                 <div className="grid grid-cols-1 md:grid-cols-3">
