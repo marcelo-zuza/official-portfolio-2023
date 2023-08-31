@@ -4,6 +4,8 @@ import PtFooter from './PtFooter'
 
 import Example from '../assets/img/example.png'
 import AmazonExample from '../assets/img/amazonExample.png'
+import ExampleAdivinhe from '../assets/img/example-adivinhe.png'
+import SpotifyExample from '../assets/img/example-spotify.png'
 
 const PtProjectsPage = () => {
   return (
@@ -21,9 +23,10 @@ const PtProjectsPage = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3">
 
                   {/* CARD MODEL */}
-  {/*             <div className="py-6 col-span-1  bg-white my-4 px-2 mx-8 content-center border border-black rounded-xl hover:shadow-2xl duration-500">
-                    <img className="h-40" src={Example} alt="example" />
-                    <p className="text-sm py-2">Lorem ipsum dolor sit amet consectetur</p>
+  {/*
+               <div className="py-6 col-span-1  bg-white my-4 px-2 mx-8 content-center border border-black rounded-xl hover:shadow-2xl duration-500">
+                    <img className="h-40" src={} alt="example" />
+                    <p className="text-xl py-2">Lorem ipsum dolor sit amet consectetur</p>
                     <div className="flex content-center justify-center py-2">
                       <a href="#" className="bg-black text-white mx-2 px-3 md:py-2 md:px-4 hover:bg-white hover:text-black duration-700 border hover:border-black rounded-xl">Ver</a>
                       <a href="#" className="bg-black text-white mx-2 px-3 md:py-2 md:px-4 hover:bg-white hover:text-black duration-700 border  hover:border-black rounded-xl">Git Hub</a>
@@ -47,6 +50,24 @@ const PtProjectsPage = () => {
                     <div className="flex content-center justify-center py-2">
                       <a href="https://marcelo-zuza.github.io/marketplace-clone/" className="bg-black text-white mx-2 px-3 md:py-2 md:px-4 hover:bg-white hover:text-black duration-700 border hover:border-black rounded-xl">Ver</a>
                       <a href="https://github.com/marcelo-zuza/marketplace-clone" className="bg-black text-white mx-2 px-3 md:py-2 md:px-4 hover:bg-white hover:text-black duration-700 border  hover:border-black rounded-xl">Git Hub</a>
+                    </div>
+                  </div>
+
+                  <div className="py-6 col-span-1  bg-white my-4 px-2 mx-8 content-center border border-black rounded-xl hover:shadow-2xl duration-500">
+                    <img className="h-40" src={ExampleAdivinhe} alt="example" />
+                    <p className="text-xl py-2">Jogo de adivinhar a palavra letra a letra</p>
+                    <div className="flex content-center justify-center py-2">
+                      <a href="https://marcelo-zuza.github.io/adivinhe-a-palavra/" className="bg-black text-white mx-2 px-3 md:py-2 md:px-4 hover:bg-white hover:text-black duration-700 border hover:border-black rounded-xl">Ver</a>
+                      <a href="https://github.com/marcelo-zuza/adivinhe-a-palavra" className="bg-black text-white mx-2 px-3 md:py-2 md:px-4 hover:bg-white hover:text-black duration-700 border  hover:border-black rounded-xl">Git Hub</a>
+                    </div>
+                  </div>
+
+                  <div className="py-6 col-span-1  bg-white my-4 px-2 mx-8 content-center border border-black rounded-xl hover:shadow-2xl duration-500">
+                    <img className="h-40" src={SpotifyExample} alt="example" />
+                    <p className="text-xl py-2">Clone da página principal do Spotify</p>
+                    <div className="flex content-center justify-center py-2">
+                      <a href="https://marcelo-zuza.github.io/spotify-clone/" className="bg-black text-white mx-2 px-3 md:py-2 md:px-4 hover:bg-white hover:text-black duration-700 border hover:border-black rounded-xl">Ver</a>
+                      <a href="https://github.com/marcelo-zuza/spotify-clone" className="bg-black text-white mx-2 px-3 md:py-2 md:px-4 hover:bg-white hover:text-black duration-700 border  hover:border-black rounded-xl">Git Hub</a>
                     </div>
                   </div>
 
