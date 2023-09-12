@@ -3,6 +3,8 @@ import { React, useState } from 'react';
 import HandleClick from '../services/HandleClick';
 import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll'
+import ScrollToTopLink from '../services/ScrollToTopLink';
+
 
 
 
@@ -34,7 +36,7 @@ const PtHomeNavBar = () => {
 
                     <div className="flex px-4 py-4 md:flex flex-1 -m-5">
                         <img className="h-8 md:h-12 md:w-12 md:-mx-14 md:-mt-0" src={Icone} alt="" />
-                        <Link to="/pt/">
+                        <Link onClick={ScrollToTopLink} to="/pt/">
                             <h1 className="text-white text-3xl font-extrabold md:ml-16 md:py-2 px-1">Marcelo Zuza</h1>
                         </Link>
                         <div className="flex justify-end flex-1 md:hidden text-white text-3xl">
@@ -42,31 +44,31 @@ const PtHomeNavBar = () => {
                             {isOpen && 
                                 <ul className="text-xl px-4">
                                 <li className="px-1">
-                                    <ScrollLink onClick={openMenu} className="text-sm md:text-xl"  activeClass="active" to="home" spy={true} smooth={true} offset={-30} duration={700}>home</ScrollLink>
+                                    <ScrollLink onClick={openMenu} className="text-base md:text-xl"  activeClass="active" to="home" spy={true} smooth={true} offset={-30} duration={700}>home</ScrollLink>
                                 </li>
                                 <li className="px-2">
-                                    <ScrollLink onClick={openMenu} className="text-sm md:text-xl"  activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={700}>sobre</ScrollLink>
+                                    <ScrollLink onClick={openMenu} className="text-base md:text-xl"  activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={700}>sobre</ScrollLink>
                                 </li>
                                 <li className="px-2">
-                                    <ScrollLink onClick={openMenu} className="text-sm md:text-xl"  activeClass="active" to="languages" spy={true} smooth={true} offset={50} duration={700}>Linguagens</ScrollLink>
+                                    <ScrollLink onClick={openMenu} className="text-base md:text-xl"  activeClass="active" to="languages" spy={true} smooth={true} offset={50} duration={700}>Linguagens</ScrollLink>
                                 </li>
                                 <li className="px-2">
-                                    <ScrollLink onClick={openMenu} className="text-sm md:text-xl"  activeClass="active" to="projects" spy={true} smooth={true} offset={-70} duration={700}>Projetos</ScrollLink>
+                                    <ScrollLink onClick={openMenu} className="text-base md:text-xl"  activeClass="active" to="projects" spy={true} smooth={true} offset={-70} duration={700}>Projetos</ScrollLink>
                                 </li>
                                 <li className="px-2">
-                                    <ScrollLink onClick={openMenu} className="text-sm md:text-xl"  activeClass="active" to="contact" spy={true} smooth={true} offset={50} duration={700}>contact</ScrollLink>
+                                    <ScrollLink onClick={openMenu} className="text-base md:text-xl"  activeClass="active" to="contact" spy={true} smooth={true} offset={50} duration={700}>contact</ScrollLink>
                                 </li>
    
                                 <li className="px-1">
-                                    <Link onClick={openMenu} className="text-sm md:text-xl" to="https://www.linkedin.com/in/marcelo-zuza/">Linkedin</Link>
+                                    <Link onClick={openMenu} className="text-base md:text-xl" to="https://www.linkedin.com/in/marcelo-zuza/">Linkedin</Link>
                                 </li>
 
                                 <li className="px-1">
-                                    <Link onClick={openMenu} className="text-sm md:text-xl" to="https://github.com/marcelo-zuza">GitHub</Link>
+                                    <Link onClick={openMenu} className="text-base md:text-xl" to="https://github.com/marcelo-zuza">GitHub</Link>
                                 </li>
 
                                 <li className="px-1">
-                                    <Link onClick={openMenu} className="text-sm md:text-xl" to="/en/">ENGLISH</Link>
+                                    <Link onClick={openMenu} className="text-base md:text-xl" to="/en/">ENGLISH</Link>
                                 </li>
 
                                 </ul>

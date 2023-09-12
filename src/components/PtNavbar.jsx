@@ -2,6 +2,7 @@ import Icone from '../assets/img/programacaoWebInvert.png'
 import { React, useState } from 'react';
 import HandleClick from '../services/HandleClick';
 import { Link } from 'react-router-dom';
+import ScrollToTopLink from '../services/ScrollToTopLink';
 
 
 const PtNavbar = () => {
@@ -32,7 +33,7 @@ const PtNavbar = () => {
 
                     <div className="flex px-4 py-4 md:flex flex-1 -m-5">
                         <img className="h-8 md:h-12 md:w-12 md:-mx-14 md:-mt-0" src={Icone} alt="" />
-                        <Link to="/pt/">
+                        <Link onClick={ScrollToTopLink} to="/pt/">
                             <h1 className="text-white text-3xl font-extrabold md:ml-16 md:py-2 px-1">Marcelo Zuza</h1>
                         </Link>
 
@@ -46,10 +47,10 @@ const PtNavbar = () => {
                                     <Link onClick={openMenu} className="text-sm md:text-xl" to="/pt/">home</Link>
                                 </li>
                                 <li className="px-2">
-                                    <Link onClick={openMenu} className="text-sm md:text-xl" to="/pt/projects">projetos</Link>
+                                    <Link onClick={() => (openMenu(), ScrollToTopLink())} className="text-sm md:text-xl" to="/pt/projects">projetos</Link>
                                 </li>
                                 <li className="px-2">
-                                    <Link onClick={openMenu} className="text-sm md:text-xl" to="/pt/contact">contato</Link>
+                                    <Link onClick={() => (openMenu(), ScrollToTopLink())} className="text-sm md:text-xl" to="/pt/contact">contato</Link>
                                 </li>
    
                                 <li className="px-1">
@@ -61,7 +62,7 @@ const PtNavbar = () => {
                                 </li>
 
                                 <li className="px-1">
-                                    <Link onClick={openMenu} className="text-sm md:text-xl" to="/en/">ENGLISH</Link>
+                                    <Link onClick={() => (openMenu(), ScrollToTopLink())} className="text-sm md:text-xl" to="/en/">ENGLISH</Link>
                                 </li>
 
                                 </ul>

@@ -10,6 +10,7 @@ import NodeIcon from '../assets/img/icons/nodejs.png'
 import PostgreIcon from '../assets/img/icons/postgre.png'
 import TailwindIcon from '../assets/img/icons/tailwind.png'
 import ReactIcon from '../assets/img/icons/atom.png'
+import TsIcon from '../assets/img/icons/Typescript_logo.png'
 
 const PtLanguages = () => {
   return (
@@ -52,6 +53,11 @@ const PtLanguages = () => {
 
                     <ul className="hidden md:flex flex-1 px-0 pt-8 pb-6 justify-center">
                       <li className="px-4 py-2 md:py-0">
+                        <Link to="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">
+                          <img className="w-16 md:w-28" src={TsIcon} alt="" />
+                        </Link>
+                      </li>
+                      <li className="px-4 py-2 md:py-0">
                         <Link to="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">
                           <img className="w-16 md:w-28" src={TailwindIcon} alt="" />
                         </Link>
@@ -78,6 +84,11 @@ const PtLanguages = () => {
                       <li className="px-4 py-2 md:py-0">
                           <Link to="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">
                             <img className="w-16 md:w-28" src={JsIcon} alt="" />
+                          </Link>
+                        </li>
+                        <li className="px-4 py-2 md:py-0">
+                          <Link to="https://www.typescriptlang.org/">
+                            <img className="w-16 md:w-28"  src={TsIcon} alt="" />
                           </Link>
                         </li>
                         <li className="px-4 py-2 md:py-0">
