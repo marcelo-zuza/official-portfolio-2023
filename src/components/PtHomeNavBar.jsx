@@ -2,6 +2,8 @@ import Icone from '../assets/img/programacaoWebInvert.png'
 import { React, useState } from 'react';
 import HandleClick from '../services/HandleClick';
 import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll'
+
 
 
 const PtHomeNavBar = () => {
@@ -40,19 +42,19 @@ const PtHomeNavBar = () => {
                             {isOpen && 
                                 <ul className="text-xl px-4">
                                 <li className="px-1">
-                                    <Link onClick={() => {openMenu(), HandleClick()}} className="text-sm md:text-xl" to="#home">home</Link>
+                                    <ScrollLink onClick={openMenu} className="text-sm md:text-xl"  activeClass="active" to="home" spy={true} smooth={true} offset={-30} duration={700}>home</ScrollLink>
                                 </li>
                                 <li className="px-2">
-                                    <Link onClick={() => {openMenu(), HandleClick()}} className="text-sm md:text-xl" to="#about">sobre</Link>
+                                    <ScrollLink onClick={openMenu} className="text-sm md:text-xl"  activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={700}>sobre</ScrollLink>
                                 </li>
                                 <li className="px-2">
-                                    <Link onClick={() => {openMenu(), HandleClick()}} className="text-sm md:text-xl" to="#languages">linguagens</Link>
+                                    <ScrollLink onClick={openMenu} className="text-sm md:text-xl"  activeClass="active" to="languages" spy={true} smooth={true} offset={50} duration={700}>Linguagens</ScrollLink>
                                 </li>
                                 <li className="px-2">
-                                    <Link onClick={() => {openMenu(), HandleClick()}} className="text-sm md:text-xl" to="#projects">projetos</Link>
+                                    <ScrollLink onClick={openMenu} className="text-sm md:text-xl"  activeClass="active" to="projects" spy={true} smooth={true} offset={-70} duration={700}>Projetos</ScrollLink>
                                 </li>
                                 <li className="px-2">
-                                    <Link onClick={() => {openMenu(), HandleClick()}} className="text-sm md:text-xl" to="#contact">contato</Link>
+                                    <ScrollLink onClick={openMenu} className="text-sm md:text-xl"  activeClass="active" to="contact" spy={true} smooth={true} offset={50} duration={700}>contact</ScrollLink>
                                 </li>
    
                                 <li className="px-1">
@@ -76,19 +78,19 @@ const PtHomeNavBar = () => {
                         <nav className="flex-1">
                             <ul className="flex justify-end flex-1 md:-mr-10">
                                 <li className="px-2">
-                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/pt/#home" onClick={HandleClick}>home</Link>
+                                    <ScrollLink className="text-sm md:text-xl hover:text-green-500 duration-700 cursor-pointer" activeClass="active" to="home" spy={true} smooth={true} offset={-30} duration={700}>home</ScrollLink>
                                 </li>
                                 <li className="px-2">
-                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/pt/#about" onClick={HandleClick}>sobre</Link>
+                                    <ScrollLink className="text-sm md:text-xl hover:text-green-500 duration-700 cursor-pointer" activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={700}>sobre</ScrollLink>
                                 </li>
                                 <li className="px-2">
-                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/pt/#languages" onClick={HandleClick}>linguagens</Link>
+                                    <ScrollLink className="text-sm md:text-xl hover:text-green-500 duration-700 cursor-pointer" activeClass="active" to="languages" spy={true} smooth={true} offset={20} duration={700}>Linguagens</ScrollLink>
                                 </li>
                                 <li className="px-2">
-                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/pt/#projects" onClick={HandleClick}>projetos</Link>
+                                    <ScrollLink className="text-sm md:text-xl hover:text-green-500 duration-700 cursor-pointer" activeClass="active" to="projects" spy={true} smooth={true} offset={0} duration={700}>Projetos</ScrollLink>
                                 </li>
                                 <li className="px-2">
-                                    <Link className="text-sm md:text-xl hover:text-green-500 duration-700" to="/pt/#contact" onClick={HandleClick}>contato</Link>
+                                    <ScrollLink className="text-sm md:text-xl hover:text-green-500 duration-700 cursor-pointer" activeClass="active" to="contact" spy={true} smooth={true} offset={20} duration={700}>contato</ScrollLink>
                                 </li>
                                 <li className="px-1">
                                     <span className="border-r border-white"></span>

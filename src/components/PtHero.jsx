@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Icone from '../assets/img/programacaoWebInvert.png'
 import HandleClick from '../services/HandleClick'
+import { Link as ScrollLink } from 'react-scroll'
 
 const PtHero = () => {
 
@@ -17,7 +18,11 @@ const PtHero = () => {
                         <img src={Icone} alt="icone" className="h-60 md:h-60 pl-6" />
                 </div>
                 <div className="flex justify-center py-2 pb-20">
-                    <Link to="#about" onClick={HandleClick} className="bg-green-500 text-white text-3xl px-8 py-4 rounded-full hover:bg-white hover:text-green-500 duration-700 hover:px-14">Comece Por aqui</Link>
+{   /*                 <Link to="#about" onClick={HandleClick} className="bg-green-500 text-white text-3xl px-8 py-4 rounded-full hover:bg-white hover:text-green-500 duration-700 hover:px-14">Comece Por aqui</Link>*/}
+
+                    <ScrollLink className="bg-green-500 text-white text-3xl px-8 py-4 rounded-full hover:bg-white hover:text-green-500 duration-700 hover:px-14 cursor-pointer" activeClass="active" to="about" spy={true} smooth={true} offset={50} duration={700}>Comece Por aqui</ScrollLink>
+                    
+
                 </div>
             </div>
           </div>  

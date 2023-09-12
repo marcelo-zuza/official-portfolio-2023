@@ -59,7 +59,7 @@ const EnProjectsPage = () => {
 
                   <div className="py-6 col-span-1  bg-white my-4 px-2 mx-8 content-center border border-black rounded-xl hover:shadow-2xl duration-500">
                     <img className="h-40" src={SpotifyExample} alt="example" />
-                    <p className="text-xl py-2">Spotify Home Page Clone</p>
+                    <p className="text-xl py-2">Spotify Home Page Clone </p>
                     <div className="flex content-center justify-center py-2">
                       <a href="https://marcelo-zuza.github.io/spotify-clone/" className="bg-black text-white mx-2 px-3 md:py-2 md:px-4 hover:bg-white hover:text-black duration-700 border hover:border-black rounded-xl">See</a>
                       <a href="https://github.com/marcelo-zuza/spotify-clone" className="bg-black text-white mx-2 px-3 md:py-2 md:px-4 hover:bg-white hover:text-black duration-700 border  hover:border-black rounded-xl">Git Hub</a>
